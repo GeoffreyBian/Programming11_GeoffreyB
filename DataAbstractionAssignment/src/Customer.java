@@ -101,7 +101,7 @@ public class Customer {
             System.out.println(d);
         }
     }
-    //do not modify
+
     public void displayWithdraws(){
         for(Withdraw w : withdraws){
             System.out.println(w);
