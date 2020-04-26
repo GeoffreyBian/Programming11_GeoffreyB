@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <tabs>
+      <Tab text="Add Friend">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER_RIGHT" layoutX="14.0" layoutY="34.0" prefHeight="300.0" prefWidth="120.0" spacing="16.5">
+                     <children>
+                        <Label text="First Name:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Last Name:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Address:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Age:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="IQ Score:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Is Trustworthy:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Other Notes:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="142.0" layoutY="42.0" prefHeight="210.0" prefWidth="176.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="textFirstName" promptText="First Name" />
+                        <TextField fx:id="textLastName" promptText="Last Name" />
+                        <TextField fx:id="textAddress" promptText="Address" />
+                        <TextField fx:id="textAge" promptText="Age" />
+                        <TextField fx:id="textIQScore" promptText="IQ Score" />
+                     </children>
+                  </VBox>
+                  <HBox layoutX="142.0" layoutY="252.0" prefHeight="23.0" prefWidth="176.0" spacing="20.0">
+                     <children>
+                        <CheckBox fx:id="cbxIsTrustworthy" mnemonicParsing="false" onAction="#setIsTrustworthy" text="Yes" />
+                        <CheckBox fx:id="cbxIsNotTrustworthy" mnemonicParsing="false" onAction="#setIsNotTrustworthy" text="No" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="btnAddFriend" layoutX="415.0" layoutY="250.0" mnemonicParsing="false" onAction="#addFriend" prefHeight="24.0" prefWidth="138.0" text="Add Friend" />
+                  <Label fx:id="lblError" layoutX="385.0" layoutY="218.0" prefHeight="25.0" prefWidth="197.0" />
+                  <Label layoutX="331.0" layoutY="62.0" prefHeight="23.0" prefWidth="123.0" text="Type of Friend:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="222.0" layoutY="23.0" text="Friend Information">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textOtherNotes" layoutX="142.0" layoutY="284.0" prefHeight="27.0" prefWidth="176.0" promptText="Other Notes" />
+                  <Label layoutX="274.0" layoutY="314.0" text="*Optional">
+                     <font>
+                        <Font name="System Italic" size="10.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="453.0" layoutY="66.0" prefHeight="78.0" prefWidth="129.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="cbxBestFriends" mnemonicParsing="false" onAction="#setBestFriend" text="Best Friends" />
+                        <CheckBox fx:id="cbxGoodFriends" mnemonicParsing="false" onAction="#setGoodFriend" text="Good Friends" />
+                        <CheckBox fx:id="cbxNormalFriends" mnemonicParsing="false" onAction="#setNormalFriend" text="Normal Friends" />
+                     </children>
+                  </VBox>
+                  <Label layoutX="524.0" layoutY="147.0" text="*Optional">
+                     <font>
+                        <Font name="System Italic" size="10.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="All New Friends">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="friendsList" disable="true" layoutX="29.0" layoutY="40.0" onMouseClicked="#displayFriend" prefHeight="305.0" prefWidth="241.0" />
+                  <VBox alignment="CENTER_RIGHT" layoutX="270.0" layoutY="47.0" prefHeight="237.0" prefWidth="125.0" spacing="10.0">
+                     <children>
+                        <Label text="First Name:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Last Name:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Address:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Age:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="IQ Score:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Is Trustworthy:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Other Notes:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Type of Friend:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" layoutX="404.0" layoutY="53.0" prefHeight="226.0" prefWidth="162.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="lblFirstName">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblLastName">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblAddress">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblAge">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblIQScore">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblIsTrustworthy">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblOtherNotes">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTypeOfFriend">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <Button fx:id="btnDeleteFriend" disable="true" layoutX="385.0" layoutY="284.0" mnemonicParsing="false" onAction="#deleteFriend" text="Delete Friend" />
+                  <Label layoutX="365.0" layoutY="26.0" prefHeight="30.0" prefWidth="139.0" text="Friend Information">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSave" disable="true" layoutX="513.0" layoutY="327.0" mnemonicParsing="false" onAction="#save" text="Save All">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="87.0" layoutY="14.0" text="All New Friends">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblErrorTwo" layoutX="275.0" layoutY="332.0" prefHeight="17.0" prefWidth="233.0" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="All Friends and Friend Lists">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="21.0" layoutY="15.0" prefHeight="26.0" prefWidth="84.0" text="Select List:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnLoad" layoutX="263.0" layoutY="47.0" mnemonicParsing="false" onAction="#load" text="Load List" />
+                  <ListView fx:id="anyListOfFriends" disable="true" layoutX="28.0" layoutY="81.0" onMouseClicked="#displayFriendTwo" prefHeight="270.0" prefWidth="218.0" />
+                  <Label fx:id="lblErrorThree" layoutX="350.0" layoutY="52.0" prefHeight="17.0" prefWidth="210.0" />
+                  <HBox layoutX="114.0" layoutY="22.0" prefHeight="17.0" prefWidth="458.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="cbxAllFriendsTwo" mnemonicParsing="false" onAction="#setAllFriendsList" text="All Friends" />
+                        <CheckBox fx:id="cbxBestFriendsTwo" mnemonicParsing="false" onAction="#setBestFriendsList" text="Best Friends" />
+                        <CheckBox fx:id="cbxGoodFriendsTwo" mnemonicParsing="false" onAction="#setGoodFriendsList" text="Good Friends" />
+                        <CheckBox fx:id="cbxNormalFriendsTwo" mnemonicParsing="false" onAction="#setNormalFriendsList" text="Normal Friends" />
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER_RIGHT" layoutX="263.0" layoutY="105.0" prefHeight="237.0" prefWidth="125.0" spacing="10.0">
+                     <children>
+                        <Label text="First Name:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Last Name:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Address:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Age:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="IQ Score:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Is Trustworthy:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Other Notes:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Type of Friend:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" layoutX="392.0" layoutY="111.0" prefHeight="227.0" prefWidth="156.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="lblFirstNameTwo">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblLastNameTwo">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblAddressTwo">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblAgeTwo">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblIQScoreTwo">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblIsTrustworthyTwo">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblOtherNotesTwo">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTypeOfFriendTwo">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <Label layoutX="348.0" layoutY="91.0" text="Friend Information">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

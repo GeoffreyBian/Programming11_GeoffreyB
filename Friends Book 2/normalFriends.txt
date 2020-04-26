@@ -1,0 +1,72 @@
+Geo|
+Geo{
+123}
+123?
+123,
+Is trustworthy.
+123[
+Normal Friends]
+;
+F|
+U{
+asd}
+12?
+21,
+Is trustworthy.
+212121[
+Normal Friends]
+;
+1|
+1{
+11}
+1?
+11,
+Is trustworthy.
+1[
+Normal Friends]
+;
+1|
+1{
+11}
+1?
+1,
+Is trustworthy.
+1[
+Normal Friends]
+;
+1|
+1{
+11}
+12?
+21,
+Is not trustworthy.
+12[
+Normal Friends]
+;
+2|
+2{
+2}
+2?
+2,
+Is trustworthy.
+2[
+Normal Friends]
+;
+2|
+2{
+2}
+2?
+2,
+Is not trustworthy.
+n/a[
+Normal Friends]
+;
+q|
+qq{
+q}
+1?
+11,
+Is trustworthy.
+1[
+Normal Friends]
+;

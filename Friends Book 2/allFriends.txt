@@ -1,0 +1,171 @@
+Geo|
+Geo{
+123}
+123?
+123,
+Is trustworthy.
+123[
+Normal Friends]
+;
+123|
+1231{
+23}
+1231231?
+3123123,
+Is not trustworthy.
+2131[
+n/a]
+;
+123123|
+123123{
+1231231}
+321312?
+3123123,
+Is not trustworthy.
+12312312[
+n/a]
+;
+312312|
+3123{
+12312}
+3123?
+12312,
+Is not trustworthy.
+312321[
+Best Friends]
+;
+123123|
+12312{
+3123}
+12312?
+3123,
+Is not trustworthy.
+213213[
+Good Friends]
+;
+F|
+U{
+asd}
+12?
+21,
+Is trustworthy.
+212121[
+Normal Friends]
+;
+kj|
+jik{
+kkj}
+90?
+0,
+Is not trustworthy.
+jkn[
+Good Friends]
+;
+1|
+1{
+11}
+1?
+11,
+Is trustworthy.
+1[
+Normal Friends]
+;
+1|
+1{
+11}
+1?
+1,
+Is trustworthy.
+1[
+Normal Friends]
+;
+1|
+1{
+11}
+12?
+21,
+Is not trustworthy.
+12[
+Normal Friends]
+;
+11|
+11{
+11}
+11?
+11,
+Is trustworthy.
+1[
+n/a]
+;
+11|
+11{
+11}
+11?
+11,
+Is trustworthy.
+11[
+n/a]
+;
+11|
+11{
+11}
+111?
+11,
+Is trustworthy.
+11[
+n/a]
+;
+2|
+2{
+2}
+2?
+2,
+Is trustworthy.
+2[
+Normal Friends]
+;
+2|
+2{
+2}
+2?
+22,
+Is trustworthy.
+2[
+n/a]
+;
+2|
+2{
+2}
+2?
+2,
+Is not trustworthy.
+n/a[
+Normal Friends]
+;
+2|
+2{
+2}
+2?
+2,
+Is trustworthy.
+n/a[
+n/a]
+;
+q|
+qq{
+q}
+1?
+11,
+Is trustworthy.
+1[
+Normal Friends]
+;
+hj|
+knj{
+kb}
+9?
+8,
+Is trustworthy.
+n/a[
+Best Friends]
+;
